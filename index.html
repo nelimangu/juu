@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Old School Runescape</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<style>
+body {
+background-image: url("https://i.redd.it/2ynl0gp6xm011.gif");
+background-size: 1750px 1300px;
+}
+#main {
+text-align:center;
+background-color:firebrick;
+}
+#main {
+border:solid 2px coral;
+background-color:firebrick;
+}
+#button {
+ width:50%;
+ height:15%;
+ background-color:firebrick;
+ clear: left;
+  margin-right: 10px;
+  padding: 5px;
+  border-width: 3px;
+  border-color: firebrick;
+  border-style: dashed;
+}
+input {
+padding:5px;
+}
+</style>
+</head>
+<body>
+<div style="display:none">
+  <embed src="jutska.mp3"/> 
+</div>
+<div id="main"style="width:600px; margin:0 auto;">
+		<h1>Kirjaudu sisään</h1>
+		<h3> Syötä runescape käyttäjänimi:</h3>
+		<input type="text" name="search" placeholder="Käyttäjänimi"> 
+		<h3>Syötä runescape salasana:</h3>
+		<input type="text" name="search" placeholder="Salasana"> 
+		<br>
+		<h3>Etkö ole rekisteröitynyt?</h3>
+		<a href="https://secure.runescape.com/m=account-creation/create_account?theme=oldschool">Tee uusi käyttäjä täältä!</a>
+		<h3>Kuinka paljon rahaa sulla on?</h3>
+    <select id='gMonth2' onchange="show_month()">
+    <option value=''>--Valitse rahamäärä--</option>
+    <option value='1'>1-10gp</option>
+    <option value='2'>10-100gp</option>
+    <option value='3'>100-1000gp</option>
+    <option value='4'>1000-10k</option>
+    <option value='5'>10k-100k</option>
+    <option value='6'>100k-1m</option>
+    <option value='7'>1m-10m</option>
+    <option value='8'>10m-100m</option>
+    <option value='9'>100m-1b</option>
+    <option value='10'>Ei ole rahaa</option>
+    </select>
+<h3> Mikä on sinun combat level?</h3>
+<form action="/action_page.php">
+  <input class="leveli" type="radio" name="combat" value="3-10" checked>3-10<br>
+  <input class="leveli" type="radio" name="combat" value="11-50" checked>11-50<br>
+  <input class="leveli" type="radio" name="combat" value="51-75" checked>51-75<br>
+  <input class="leveli" type="radio" name="combat" value="76-100" checked>76-100<br>
+  <input class="leveli" type="radio" name="combat" value="101-110" checked>101-110<br>
+  <input class="leveli" type="radio" name="combat" value="111-126" checked>111-126<br>
+</form> 	
+	</select>
+<h3>Kuinka monta tuntia pelaat päivässä?</h3>
+<form action="/action_page.php">
+  <input type="radio" name="tunnit" value="0-1h" checked>0-1h
+  <input type="radio" name="tunnit" value="2-3h" checked>2-3h
+  <input type="radio" name="tunnit" value="2-6h" checked>4-6h
+  <input type="radio" name="tunnit" value="6-10h" checked>6-10h
+  <input type="radio" name="tunnit" value="10-15h" checked>10-15h
+  <input type="radio" name="tunnit" value="15-24h" checked>15-24h
+</form> 
+<button id="button">
+	<script type="text/javascript">
+    document.getElementById("button").onclick = function () {
+        location.href = "https://0sgari.github.io/";
+    };
+</script>
+<h3>Paina tota ukkoa, niin näät runescape statsit</h3>
+<img src="https://vignette.wikia.nocookie.net/2007scape/images/7/74/Headbang.gif/revision/latest?cb=20180829032348" alt="Smiley face" height="68" width="300">
+</button>
+    </div>
+</body>
+</html>
